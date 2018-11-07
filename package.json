@@ -1,0 +1,8 @@
+{
+  "name": "reasonml-starter-kit",
+  "version": "1.0.0",
+  "description": "ReasonML starter kit",
+  "main": "index.js",
+  "author": "Nicolas Goumard",
+  "license": "MIT"
+}
