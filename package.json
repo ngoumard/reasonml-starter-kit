@@ -11,18 +11,21 @@
     "concurrently": "^4.0.1",
     "husky": "^1.1.3",
     "lint-staged": "^8.0.4",
-    "parcel-bundler": "^1.10.3"
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.14.3"
   },
   "dependencies": {
+    "bootstrap": "^4.1.3",
+    "bootstrap-sass": "^3.3.7",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "reason-react": "^0.5.3"
   },
   "scripts": {
-    "build": "parcel build ./src/index.html --public-url /",
+    "build": "parcel build public/index.html --public-url /",
     "format": "refmt --in-place src/*.re",
     "start": "concurrently -c --kill-others 'npm:watch-html' 'npm:watch-reason'",
-    "watch-html": "parcel ./src/index.html",
+    "watch-html": "parcel public/index.html --public-url /",
     "watch-reason": "bsb -make-world -w"
   },
   "husky": {

@@ -28,3 +28,4 @@ yarn-error.log*
 
 *.bs.js
 .cache
+.bsb.lock
